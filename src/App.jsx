@@ -1,10 +1,10 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import MainLayout from './Layouts/MainLayout';
 import Home from './Pages/Home/Home';
 import Product from './Pages/Single-Product/Product';
 
-const routes = createBrowserRouter([
+const routes = createHashRouter([
 
     {path: '/', element: <MainLayout />, children: [
 
